@@ -98,12 +98,12 @@ const App = () => {
         {user && (
           <>
             <Route path="/" element={<Home />} />
-            <Route path="/inventario" element={<Inventario />} />
-            <Route path="/produccion" element={<Produccion />} />
-            <Route path="/ventas" element={<Ventas />} />
-            <Route path="/clientes" element={<Clientes />} />
-            {user.role === 'administrador' && <Route path="/usuarios" element={<Usuarios />} />}
-            <Route path="/reportes" element={<Reportes />} />
+            <Route path="/inventario" element={<ModuleTemplate title="Inventario" />} />
+            <Route path="/produccion" element={<ModuleTemplate title="Producción" />} />
+            <Route path="/ventas" element={<ModuleTemplate title="Ventas" />} />
+            <Route path="/clientes" element={<ModuleTemplate title="Atención al Cliente" />} />
+            {user.role === 'administrador' && <Route path="/usuarios" element={<ModuleTemplate title="Gestión de Usuarios" />} />}
+            <Route path="/reportes" element={<ModuleTemplate title="Reportes" />} />
             <Route path="/*" element={<Navigate to="/" />} />
           </>
         )}
@@ -113,4 +113,5 @@ const App = () => {
 };
 
 export default App;
+
 
