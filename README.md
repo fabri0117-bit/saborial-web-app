@@ -1,4 +1,4 @@
-// Proyecto: Sistema Web para SABORIAL
+// Web para SABORIAL
 // Framework: React + Tailwind CSS + Simulación de autenticación por roles
 
 import React, { useState } from 'react';
@@ -113,5 +113,4 @@ const App = () => {
 };
 
 export default App;
-
 
